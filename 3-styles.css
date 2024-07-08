@@ -1,0 +1,18 @@
+input {
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+i {
+    color: #fff;
+    background-color: #C81938;
+    width: 40px;
+    padding: 13px 0;
+    text-align: center;
+    margin: 10px;
+    border-radius: 50%;
+}

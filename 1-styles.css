@@ -1,0 +1,23 @@
+a{
+    text-decoration: none;
+    color: #A31D38;
+    position: relative;
+
+}
+a::before{
+    content: '';
+    width: 100%;
+    background-color: #A31D38;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+a:hover:before{
+    transform: scaleX(1);
+    transition: all .3s ease;
+}
+a:hover{
+    cursor: pointer;
+}
