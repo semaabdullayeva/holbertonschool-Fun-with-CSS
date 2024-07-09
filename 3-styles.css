@@ -6,7 +6,9 @@ nav {
     display: flex;
     flex-direction: column;
 }
-
+nav a{
+    display: none;
+}
 i {
     color: #fff;
     background-color: #C81938;
@@ -15,4 +17,70 @@ i {
     text-align: center;
     margin: 10px;
     border-radius: 50%;
+    border: 1px solid  #C81938;
 }
+i:hover{
+    background-color: #fff;
+    color: #C81938;
+transition: all .2s ease;
+}
+.menu-line{
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 20px;
+    border-radius: 10px;
+    margin: 5px auto;
+    transition: all .3s ease;
+
+
+}
+.menu-open-button {
+    position: relative;
+    width: 30px;
+    padding: 7px 6px 5px 6px;
+    height: 30px;
+    background-color: #C81938;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px;
+}
+.menu-open:checked ~ .menu-item{
+    display: block;
+}
+
+.menu-open:checked ~ .menu-open-button .menu-line-2{
+    display: none;
+}
+
+.menu-open:checked ~ .menu-open-button .menu-line-1{
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 26%;
+    top: 35%;
+    transition: all .3s ease;
+}
+
+.menu-open:checked ~ .menu-open-button .menu-line-3 {
+    transform: rotate(45deg);
+    position: absolute;
+    left: 26%;
+    top: 35%;
+    transition: all .3s ease;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
